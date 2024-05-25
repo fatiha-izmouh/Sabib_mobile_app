@@ -1,16 +1,16 @@
-# sabib_feecra
+## 📱 Application Mobile
 
-A new Flutter project.
+1. **Contrôle à Distance du Débit d'Eau**
+   - Permet aux utilisateurs de contrôler le débit d'eau à distance.
+   
+2. **Surveillance en Temps Réel**
+   - Surveille le débit d'eau en temps réel grâce à des capteurs avancés.
+   
+3. **Calcul de la Consommation Instantanée**
+   - Calcule la consommation d'eau instantanée, offrant aux utilisateurs des informations précises sur leurs habitudes de consommation.
+   
+4. **Détection des Fuites**
+   - Détecte les fuites d'eau précocement, empêchant le gaspillage d'eau et les dommages potentiels.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5. **Interface Utilisateur Intuitive**
+   - Intégration d'une application conviviale permettant aux utilisateurs de surveiller et de gérer leur consommation d'eau avec facilité.
