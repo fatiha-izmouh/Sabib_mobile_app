@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350021719608",
+    "project_id": "sabibfeecra",
+    "storage_bucket": "sabibfeecra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350021719608:android:0449002bae5edd281ab8cd",
+        "android_client_info": {
+          "package_name": "com.example.sabib_feecra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMTws-BXuUeZZuTgcdD3IWg06vfNOjQn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

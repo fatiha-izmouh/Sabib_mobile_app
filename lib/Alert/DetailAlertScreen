@@ -1,0 +1,85 @@
+import 'package:flutter/material.dart';
+
+class DetailAlertScreen extends StatelessWidget {
+  final Map<String, dynamic> alert;
+
+  const DetailAlertScreen({Key? key, required this.alert}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.deepOrangeAccent[100],
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 35),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 36),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.add_alert_rounded,
+                        size: 40, color: Colors.white),
+                    SizedBox(width: 14),
+                    Text(
+                      "Leak detected",
+                      style: TextStyle(fontSize: 18),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 22),
+                Text(
+                  alert['place'],
+                  style: TextStyle(fontSize: 16, color: Colors.indigo),
+                ),
+                SizedBox(height: 14),
+                Text(
+                  _calculateTimeAgo(alert['timestamp'].toDate()),
+                  style: TextStyle(fontSize: 14, color: Colors.indigo),
+                ),
+                SizedBox(height: 22),
+                SizedBox(
+                  width: 290,
+                  child: Text(
+                    alert['details'],
+                    maxLines: 5,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                SizedBox(height: 258),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 28),
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Handle button press
+                    },
+                    child: Text("Clear alert"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _calculateTimeAgo(DateTime dateTime) {
+    // Calculate time difference
+    Duration difference = DateTime.now().difference(dateTime);
+
+    // Format time ago
+    if (difference.inSeconds < 60) {
+      return "${difference.inSeconds} seconds ago";
+    } else if (difference.inMinutes < 60) {
+      return "${difference.inMinutes} minutes ago";
+    } else if (difference.inHours < 24) {
+      return "${difference.inHours} hours ago";
+    } else {
+      return "${difference.inDays} days ago";
+    }
+  }
+}
