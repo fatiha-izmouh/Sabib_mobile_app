@@ -14,3 +14,10 @@
 
 5. **Interface Utilisateur Intuitive**
    - Intégration d'une application conviviale permettant aux utilisateurs de surveiller et de gérer leur consommation d'eau avec facilité.
+## Prototype
+
+![Image 1](auth.png)
+![Image 2](acueill.png)
+![Image 3](alert.png)
+![Image 4](detail_alert)
+![Image 4](add.png)
