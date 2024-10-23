@@ -17,9 +17,9 @@
 ## Prototype
 
 ![Image 1](auth.png)
+![Image 4](home.png)
+![Image 4](add.png)
 ![Image 2](accueil.png)
 ![Image 3](alert.png)
 ![Image 4](details_alert)
-![Image 4](add.png)
-![Image 4](home.png)
 
